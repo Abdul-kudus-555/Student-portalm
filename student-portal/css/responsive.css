@@ -1,0 +1,61 @@
+/* ── Tablet ── */
+@media (max-width: 960px) {
+  .four-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .two-col  { grid-template-columns: 1fr; }
+  .three-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gpa-block { padding: 0 14px; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 4px 0 20px rgba(10,18,42,0.3);
+  }
+
+  .hamburger { display: flex; }
+
+  .semester-tag { display: none; }
+
+  .content { padding: 16px; }
+  .topbar  { padding: 0 16px; }
+
+  .profile-hero { padding: 20px; }
+  .three-col { grid-template-columns: 1fr; }
+  .gpa-strip { flex-direction: column; padding: 16px; gap: 14px; }
+  .gpa-block {
+    padding: 0 0 14px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .gpa-block:last-child { padding-bottom: 0; border-bottom: none; }
+
+  .notif-dropdown { right: 10px; left: 10px; width: auto; }
+}
+
+/* ── Small Mobile ── */
+@media (max-width: 500px) {
+  .four-col { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .schedule-grid { display: none; }
+  .schedule-mobile-note {
+    display: block;
+    background: var(--bone);
+    color: var(--text2);
+    border-radius: var(--r-md);
+    padding: 14px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .stat-value { font-size: 20px; }
+}
+
+@media (min-width: 501px) {
+  .schedule-mobile-note { display: none; }
+}

@@ -1,0 +1,44 @@
+:root {
+  /* Brand palette */
+  --prussian:   #0a122a;
+  --prussian2:  #131e42;
+  --prussian3:  #1c2d5a;
+  --sage:       #698f3f;
+  --sage2:      #4e6d2e;
+  --sage3:      #a3c46e;
+  --snow:       #fbfaf8;
+  --bone:       #e7decd;
+  --bone2:      #d5cabb;
+  --bone3:      #c8bda8;
+  --clay:       #804e49;
+  --clay2:      #9e6460;
+  --clay3:      #c0857f;
+
+  /* Neutrals */
+  --white:      #ffffff;
+  --text:       #1c1c1a;
+  --text2:      #4a4a46;
+  --text3:      #8a8a84;
+  --border:     #ece8e0;
+  --border2:    #ddd8ce;
+  --bg-light:   #f5f2ec;
+
+  /* Layout */
+  --sidebar-w:  240px;
+  --topbar-h:   60px;
+
+  /* Typography */
+  --font:       'DM Sans', system-ui, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+
+  /* Radii */
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  14px;
+  --r-xl:  20px;
+  --r-full: 9999px;
+
+  /* Transitions */
+  --t-fast:   0.12s ease;
+  --t-normal: 0.2s ease;
+}
